@@ -1,0 +1,4 @@
+<h2>Welcome to Polling App</h2>
+<h3>Should I buy new shoes??</h3>
+<h3 style="color: tomato">Agree{{agreeCount}}   DisAgree{{disagreeCount}}</h3>
+<app-button-child *ngFor="let voter of voters" [name]="voter" (countChanged)="countChangedHandler($event)"></app-button-child>
