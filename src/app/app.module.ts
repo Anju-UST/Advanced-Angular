@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { VoteTakerComponent } from './vote-taker/vote-taker.component';
+import { VoterComponent } from './voter/voter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VoteTakerComponent,
+    VoterComponent
   ],
   imports: [
     BrowserModule
