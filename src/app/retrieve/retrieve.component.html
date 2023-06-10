@@ -1,0 +1,23 @@
+
+<div>
+    <h2 class="text-center">Student </h2>
+    <div class="d-flex my-2">
+        <a  routerLink="/create"  class="btn btn-primary">Create Student</a>
+    </div>
+    <table border="2" class="table">
+        <thead class="thead-dark">
+            <th>Student id</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Actions</th> 
+        </thead>
+        <tr *ngFor="let stud of students">
+            <td>{{stud.id}}</td>
+            <td>{{stud.name}}</td>
+            <td>{{stud.dept}}</td>
+            <td><button class="btn btn-success" type="submit">Update</button>&nbsp;
+            <button class="btn btn-danger" type="submit">Delete</button></td>
+        </tr>
+    </table>
+</div>
+

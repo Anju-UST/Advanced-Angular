@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Crud_SPA';
+showAdminBoard: any;
+showModeratorBoard: any;
+isLoggedIn: any;
 }
