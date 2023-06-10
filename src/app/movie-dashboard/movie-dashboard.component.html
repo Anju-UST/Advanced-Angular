@@ -1,0 +1,7 @@
+<!-- <p>movie-dashboard works!(Parent)</p>
+<app-movie-table [movieList]="myMovies"></app-movie-table> -->
+<p>movie-dashboard works!(Parent)</p>
+<app-movie-table 
+(movieEventEmitter)="selectedMovieToWatch($event)" 
+[movieList]="myMovies">
+</app-movie-table>

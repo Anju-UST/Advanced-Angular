@@ -1,0 +1,12 @@
+<table class="table-striped">
+    <thead class="thead-light">
+    <tr>
+        <th >MOVIES</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let movie of movieList">
+        <td>{{movie}}</td>
+        <td><input type="button" value="Select" (click)="movieSelected(movie)"></td>
+
+    </tr>
+</table>
