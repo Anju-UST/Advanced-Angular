@@ -1,0 +1,4 @@
+
+<h1>Welcome to {{title}}! (count change from child)</h1>
+  <p> current count is {{Counter}} </p>
+<app-child  [count]=Counter (countChanged)="countChangedHandler($event)"></app-child>
