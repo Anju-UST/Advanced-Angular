@@ -1,0 +1,23 @@
+<h3>Order Product</h3>
+<form (ngSubmit)="onSubmit()">
+    
+    <div class ="form-group">
+        <label for="">ProductId</label>
+        <input type="text" class="form-control" id="id"
+        [(ngModel)]="order.productId" name="id">
+    </div>
+    <div class ="form-group">
+        <label for="">Quantity</label>
+        <input type="text" class="form-control" id="quantity"
+        [(ngModel)]="order.quantity" name="quantity">
+    </div>
+    
+    <div class ="form-group">
+        <label for="">price</label>
+        <input type="text" class="form-control" id="price"
+        [(ngModel)]="order.amount" name="price">
+    </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+    <p *ngIf="message">Order Placed Successfully with id {{ message }}</p>
+</form>
+

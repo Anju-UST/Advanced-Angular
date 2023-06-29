@@ -1,0 +1,30 @@
+<h3>Add Product to cart</h3>
+<form (ngSubmit)="onSubmit()">
+    
+    <div class ="form-group">
+        <label for="">ProductName</label>
+        <input type="text" class="form-control" id="id"
+        [(ngModel)]="cart.name" name="id">
+    </div>
+    <div class ="form-group">
+        <label for="">Quantity</label>
+        <input type="text" class="form-control" id="quantity"
+        [(ngModel)]="cart.quantity" name="quantity">
+    </div>
+    
+    <div class ="form-group">
+        <label for="">price</label>
+        <input type="text" class="form-control" id="price"
+        [(ngModel)]="cart.price" name="price">
+    </div>
+    <div class="form-group">
+        <label for="">Image</label>
+        <input type="text" class="form-control" id="image"
+        [(ngModel)]="cart.image" name="image">
+
+    </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+    <p *ngIf="message">Product {{ message }}</p>
+</form>
+
+
